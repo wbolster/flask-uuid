@@ -62,3 +62,8 @@ constructor, simply set the `strict` flag to `False`::
     def mypage(id):
         return id
 
+
+License
+=======
+
+This software is BSD licensed; see `LICENSE.rst` for more information.
