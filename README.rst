@@ -6,7 +6,7 @@ Flask-UUID
 urls on a Flask application. It uses the standard library's ``uuid`` module to
 convert UUIDs to and from strings.
 
-This extension allows you to easily route and generate urls containing UUID,
+This extension allows you to easily route and generate urls containing UUID parts,
 e.g. ``/page/fe4a3e33-cb4b-42ac-a29b-a8160a85af7e``.
 
 .. _Flask: http://flask.pocoo.org
@@ -51,7 +51,7 @@ Now you can use it in your routes like any other converter::
 You can also use UUID instances to generate urls::
 
     random_uuid = uuid.uuid4()
-    url = app.url_for('mypage', id=random_uuid)
+    url = url_for('mypage', id=random_uuid)
 
 Note that, by default, the converter only accepts and generates lowercase
 hexadecimal UUIDs with dashes at the proper places, in order to keep urls
