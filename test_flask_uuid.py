@@ -32,7 +32,7 @@ class FlaskUUIDTestCase(unittest.TestCase):
         with self.client as c:
 
             rv = c.get('/strict/%s' % UUID_VALID)
-            assert rv.data == "success"
+            assert rv.data == b"success"
             assert str(request.view_args['test']) == UUID_VALID
 
             rv = c.get('/strict/%s' % UUID_INVALID)
@@ -42,10 +42,10 @@ class FlaskUUIDTestCase(unittest.TestCase):
         with self.client as c:
 
             rv = c.get('/non-strict/%s' % UUID_VALID)
-            assert rv.data == "success"
+            assert rv.data == b"success"
 
             rv = c.get('/non-strict/%s' % UUID_VALID_UPPER)
-            assert rv.data == "success"
+            assert rv.data == b"success"
 
 
 if __name__ == '__main__':
