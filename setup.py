@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Flask-UUID',
-    version='0.2dev',
+    version='0.2',
     description='UUID url converter for Flask routes',
     author='Wouter Bolsterlee',
     author_email='uws@xs4all.nl',
