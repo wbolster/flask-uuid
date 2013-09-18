@@ -72,4 +72,3 @@ This software is BSD licensed; see `LICENSE.rst` for more information.
 .. image:: https://d2weczhvl823v0.cloudfront.net/wbolster/flask-uuid/trend.png
    :alt: Bitdeli badge
    :target: https://bitdeli.com/free
-
