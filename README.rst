@@ -27,7 +27,7 @@ Flask-UUID is a well-behaved Flask extension, so you can either initialise it
 directly upon instantiation::
 
     from flask import Flask
-    from flask.ext.uuid import FlaskUUID
+    from flask_uuid import FlaskUUID
 
     app = Flask(__name__)
     FlaskUUID(app)

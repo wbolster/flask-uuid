@@ -3,7 +3,7 @@
 import uuid
 
 from flask import Flask, redirect, url_for
-from flask.ext.uuid import FlaskUUID
+from flask_uuid import FlaskUUID
 
 app = Flask(__name__)
 FlaskUUID(app)
