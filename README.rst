@@ -35,7 +35,7 @@ directly upon instantiation::
 Or initialise it like this::
 
     from flask import Flask
-    from flask.ext.uuid import FlaskUUID
+    from flask_uuid import FlaskUUID
 
     app = Flask(__main__)
 
